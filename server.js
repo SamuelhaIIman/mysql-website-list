@@ -8,7 +8,11 @@ app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'));
 
 app.get('/', (req, res) => {
-    res.render('home', { name: 'Akashdeep'});
+    let data = {
+        name: "Samuel",
+        hobbies: ["Coding", "Running", "Learning"]
+    }
+    res.render('home', { data: data });
 });
 const PORT = 4000;
 app.listen(PORT, () => {
