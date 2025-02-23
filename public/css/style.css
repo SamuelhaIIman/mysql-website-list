@@ -3,3 +3,8 @@
     background-color: black;
     width: 100px;
 }
+#box-test {
+    background-color: red;
+    width: 200px;
+    height: 100px;
+}
